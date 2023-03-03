@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {App} from './components/App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import odaImg from './img/nigaoe_oda_nobunaga.png';
+import akechiImg from './img/nigaoe_akechi_mitsuhide.png';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+const tweetList = [
+    {name: '織田信長', img: odaImg, tweet: '本能寺燃えとるんじゃが…'},
+    {name: '明智光秀', img: akechiImg, tweet: '本能寺に火付けたったww'}
+]
+
+const accountList = [
+    {name: '織田信長', img: odaImg},
+    {name: '明智光秀', img: akechiImg},
+]
+ReactDOM.render(<App accountList={accountList} tweetList={tweetList}/>, 
+    document.getElementById('root'));
