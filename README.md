@@ -1,3 +1,14 @@
+# Twitter風チャットアプリ
+<img width="836" alt="スクリーンショット 2023-03-04 2 04 18" src="https://user-images.githubusercontent.com/104242534/223041635-c6b35c31-c146-45f7-8f46-4e7bbb506151.png">
+
+# 制作理由
+* React学習のアウトプットのため
+
+# 機能
+* "織田信長", "明智光秀" の二人からツイートする人物を選択可能
+* ツイートの書き込み
+* ツイートの表示
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
